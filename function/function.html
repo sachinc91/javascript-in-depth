@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Console demo</title>
+
+    <script>
+        // function declaration
+        function addition(a,b){
+            return a+b;
+        }
+
+        // function expression
+        const subtraction = function addition(a,b){
+            return a-b;
+        }
+
+        console.log(`addition :: ${addition(1,2)}`);
+        console.log(`subtraction :: ${subtraction(1,2)}`);
+        console.log(`print function name  :: ${subtraction}`);
+
+
+        // Immediately invoked function expression IIFE
+
+        (function (){
+            let a= 5;
+            let b= 5;
+            console.log(`addition :: ${addition(a,b)}`);
+        })();
+    </script>
+</head>
+<body></body>
+</html>

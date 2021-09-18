@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console demo</title>
+
+    <script>
+        // function declaration
+        let addition = function addition(a,b){
+            return a+b;
+        }
+
+        function printer(addition){
+            console.log(`addition :: ${addition(1,2)}`);
+        }
+
+        printer(addition); // Callback pass function as a value and scope of function will be associated with passed function
+    </script>
+</head>
+<body></body>
+</html>
